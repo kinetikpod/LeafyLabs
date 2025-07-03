@@ -1,0 +1,23 @@
+name: Deploy to Railway
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Railway
+      uses: railwayapp/cli-action@v2
+      with:
+        railwayToken: ${{ secrets.RAILWAY_TOKEN }}
+
+    - name: Deploy to Railway
+      run: railway up --service YOUR_SERVICE_NAME
+

@@ -1,0 +1,32 @@
+from pydantic_settings import BaseSettings
+from functools import lru_cache
+from typing import Optional
+from pydantic import PostgresDsn
+
+
+class Settings(BaseSettings):
+    ENV: str
+
+    DATABASE_URL: Optional[PostgresDsn] = None
+
+    # MAILJET_API_KEY: str
+    # MAILJET_SECRET_KEY: str
+    # MAILJET_SENDER_EMAIL: str
+
+    # SECRET_KEY: str
+    # JWT_ALGORITHM: str
+    # JWT_ACCESS_TOKEN_EXPIRES_MINUTES: int
+
+    # EMAIL_VERIFICATION_TOKEN_TTL_MINUTES: int
+
+    # CLIENT_URL: str
+
+    model_config = {"env_file": ".env"}
+
+
+@lru_cache()
+def get_settings():
+    return Settings()
+
+
+# print("test")
