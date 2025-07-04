@@ -1,17 +1,8 @@
 from fastapi import APIRouter, HTTPException, Depends
 from app.stat.schema import AnovaRequest, AnovaResponse, TtestRequest, TtestResponse
 from app.stat.dependencies import get_stat_service
-import os
 
 router = APIRouter(prefix="/stat", tags=["Statistic"])
-
-
-@router.get("/_debug-env")
-def debug_env():
-    return {
-        "DATABASE_URL": os.getenv("DATABASE_URL"),
-        "ALL_ENV": dict(os.environ),
-    }
 
 
 @router.get("/health")
