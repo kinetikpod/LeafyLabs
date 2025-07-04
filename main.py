@@ -20,10 +20,9 @@ from core.logger import logger
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     # === STARTUP ===
-    settings = get_settings()
-    database_url = settings.DATABASE_URL
+    db_url = get_settings().DATABASE_URL
 
-    if database_url:
+    if db_url:
         try:
             await db.connect()
             logger.info("✅ Database connection established.")
@@ -41,7 +40,7 @@ async def lifespan(_: FastAPI):
     yield  # === APPLICATION IS RUNNING ===
 
     # === SHUTDOWN ===
-    if database_url:
+    if db_url:
         await db.disconnect()
         logger.info("⏹️ Database connection closed gracefully.")
 
