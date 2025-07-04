@@ -7,7 +7,7 @@ from pydantic import PostgresDsn
 class Settings(BaseSettings):
     ENV: str
 
-    DATABASE_URL: Optional[PostgresDsn] = None
+    DATABASE_URL: Optional[str] = None
 
     # MAILJET_API_KEY: str
     # MAILJET_SECRET_KEY: str
