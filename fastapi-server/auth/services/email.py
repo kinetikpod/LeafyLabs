@@ -1,6 +1,7 @@
 from mailjet_rest import Client
 from core.settings import settings
 from auth.templates import email
+from core.logger import logger
 
 
 class EmailService:
@@ -43,12 +44,12 @@ class EmailService:
         }
         try:
             result = self.client.send.create(data=message)
-            print(
+            logger.info(
                 f"[EmailService] Email '{subject}' sent to {to_email}:",
                 result.status_code,
             )
         except Exception as e:
-            print(
+            logger.error(
                 f"[EmailService] Failed to send email '{subject}' to {to_email}:",
                 str(e),
             )
