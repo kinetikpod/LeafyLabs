@@ -4,18 +4,26 @@ from typing import Optional
 
 
 class Settings(BaseSettings):
+    # ======= Environment =======
+    ENV: str
+
+    # ======= Database =======
     DATABASE_URL: Optional[str] = None
 
+    # ======= Mailjet =======
     MAILJET_API_KEY: str
     MAILJET_SECRET_KEY: str
     MAILJET_SENDER_EMAIL: str
 
+    # ======= JWT =======
     SECRET_KEY: str
     JWT_ALGORITHM: str
     JWT_ACCESS_TOKEN_EXPIRES_MINUTES: int
 
+    # ======= Email verification =======
     EMAIL_VERIFICATION_TOKEN_TTL_MINUTES: int
 
+    # ======= Frontend client =======
     CLIENT_URL: str
 
     model_config = {"env_file": ".env"}

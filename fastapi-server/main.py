@@ -19,7 +19,7 @@ async def lifespan(_: FastAPI):
     await db.connect()  # create asyncpg.Pool
     medical_service.load_model()  # load pickle + SHAP
     logger.info("✅ Database pool & ML model are ready")
-    yield  # ------------ application is running -------------
+    yield  # ------- application is running --------
     # --- SHUTDOWN ---
     await db.disconnect()
     logger.info("⏹️  Database pool has been closed")
@@ -51,7 +51,7 @@ app.include_router(ml_router)
 
 
 def main():
-    uvicorn.run(app="main:app", host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run(app="main:app", host="0.0.0.0", port=8000, reload=True)
 
 
 if __name__ == "__main__":

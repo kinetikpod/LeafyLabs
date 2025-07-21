@@ -1,0 +1,38 @@
+services:
+  # postgres-db:
+  #   image: postgres:15.4-alpine3.18 
+  #   ports:
+  #     - "5432:5432"
+  #   env_file:
+  #     - ./postgres/.env
+  #   volumes:
+  #     - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  fastapi-server:
+    build:
+        context: ./fastapi-server
+        target: dev
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./fastapi-server/.env
+    volumes:
+      - ./fastapi-server:/fastapi-server
+    # depends_on:
+    #   - postgres-db
+
+  react-client:
+    build: ./react-client
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./react-client:/react-client
+      - react_node_modules:/react-client/node_modules
+    depends_on:
+      - fastapi-server
+volumes:
+  react_node_modules:
+
+
+
+
