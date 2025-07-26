@@ -97,7 +97,8 @@ docker-compose up --build
 
 ## 📸 Screenshots
 
-*(Add your screenshots here!)*
+Below are some screenshots that illustrate how to use the app — from uploading CSVs to running inference and ML prediction.
+
 
 ### 📊 1. Upload CSV File for Statistical Inference
 
