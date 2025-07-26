@@ -106,7 +106,7 @@ docker-compose up --build
 
 | Click Run                       | See the inference Result                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](react-client/images/infer1/h0_3group_params.png) | ![SHAP Plot](react-client/images/infer1/revenue_show1.png) |
+| ![wide range csv data](react-client/images/infer1/click_button.png) | ![SHAP Plot](react-client/images/infer1/revenue_show1.png) |
 
 
 | Go to ML Card, input the X and click predict                       | Prediction & SHAP Explanation                |
