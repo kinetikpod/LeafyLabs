@@ -97,39 +97,39 @@ docker-compose up --build
 
 ## 📸 Screenshots
 
-Below are some screenshots that illustrate how to use the app — from uploading CSVs to running inference and ML prediction.
+Below are some screenshots that illustrate how to use the app — from uploading CSV files to running statistical tests and machine learning predictions.
 
+---
 
 ### 📊 1. Upload CSV File for Statistical Inference
 
 > ⚠️ Make sure your CSV file is in **wide format**, where each column represents a different group or variable.  
 > For example: one column for "Age Group A", another for "Age Group B", etc.
 
-| Step                                                                 | Inference Result & SHAP Explanation                      |
-|----------------------------------------------------------------------|-----------------------------------------------------------|
+| Step                                                               | Inference Result & SHAP Explanation                        |
+|--------------------------------------------------------------------|-------------------------------------------------------------|
 | Upload a `.csv` file in wide format via the **Statistic** card     | ![Statistical Result](react-client/images/infer2/mannwhitney_violin.png) |
 
-| Example of Wide-Format Table                                        |                                                           |
-|----------------------------------------------------------------------|-----------------------------------------------------------|
-| ![Wide CSV Example](react-client/images/infer2/mannwhitney_reject.png) |                                                           |
+#### 🖼️ Sample Output Generated from a Wide-Format CSV
 
+![Test Output](react-client/images/infer2/mannwhitney_reject.png)
 
 ---
 
 ### 🧪 2. Run the Test with Repeated Option
 
-| Step                                                                 | Inference Output                                          |
-|----------------------------------------------------------------------|-----------------------------------------------------------|
-| Select the **"Repeated"** option if needed, then click **Run**      | ![Test Output](react-client/images/infer1/infer_whitney.png) |
+| Step                                                               | Inference Output                                            |
+|--------------------------------------------------------------------|-------------------------------------------------------------|
+| Select the **"Repeated"** option if needed, then click **Run**     | ![Test Output](react-client/images/infer1/infer_whitney.png) |
 
 ---
 
 ### 🤖 3. Predict Heart Attack Risk with ML Model
 
-| Step                                                                 | Prediction Result & SHAP Explanation                      |
-|----------------------------------------------------------------------|------------------------------------------------------------|
-| Go to the **ML** card, fill in the form with variables suspected to affect heart attack risk, then click **Predict** | ![Input Form](react-client/images/infer3/infer3_form.png) |
-|                                                                      | ![SHAP Plot](react-client/images/infer3/infer3_shap.png)   |
+| Step                                                               | Prediction Result & SHAP Explanation                        |
+|--------------------------------------------------------------------|-------------------------------------------------------------|
+| Go to the **ML** card, fill in the form with variables that may influence heart attack risk, then click **Predict** | ![Input Form](react-client/images/infer3/infer3_form.png) |
+|                                                                    | ![SHAP Plot](react-client/images/infer3/infer3_shap.png)   |
 
 ---
 
