@@ -111,7 +111,7 @@ Below are some screenshots that illustrate how to use the app — from uploading
 
 | Example of Wide-Format Table                                        |                                                           |
 |----------------------------------------------------------------------|-----------------------------------------------------------|
-| ![Wide CSV Example](react-client/images/infer1/infer_whitney.png) |                                                           |
+| ![Wide CSV Example](react-client/images/infer2/mannwhitney_reject.png) |                                                           |
 
 
 ---
