@@ -122,21 +122,6 @@ docker-compose up --build
 | Go to the **ML** card, fill in the form with variables suspected to affect heart attack risk, then click **Predict** | ![Input Form](react-client/images/infer3/infer3_form.png) |
 |                                                                      | ![SHAP Plot](react-client/images/infer3/infer3_shap.png)   |
 
-
-| Go to statistic Card and upload a csv file                      | Prediction & SHAP Explanation                |
-| ---------------------------------------------- | -------------------------------------------- |
-| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
-
-
-| Click Run                       | See the inference Result                |
-| ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](react-client/images/infer1/click_button.png) | ![SHAP Plot](react-client/images/infer1/infer_whitney.png) |
-
-
-| Go to ML Card, input the X and click predict                       | Prediction & SHAP Explanation                |
-| ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](react-client/images/infer3/infer3_form.png) | ![SHAP Plot](react-client/images/infer3/infer3_shap.png) |
-
 ---
 
 ---
