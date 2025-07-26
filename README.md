@@ -101,7 +101,7 @@ docker-compose up --build
 
 | Go to statistic Card and upload a csv file                      | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
+| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer1/infer_whitney.png) |
 
 
 | Click Run                       | See the inference Result                |
