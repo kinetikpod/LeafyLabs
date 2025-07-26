@@ -99,9 +99,33 @@ docker-compose up --build
 
 *(Add your screenshots here!)*
 
+### 📊 1. Upload CSV File for Statistical Inference
+
+| Step                                                                 | Inference Result & SHAP Explanation                      |
+|----------------------------------------------------------------------|-----------------------------------------------------------|
+| Go to the **Statistic** card and upload a `.csv` file               | ![Statistical Result](react-client/images/infer2/mannwhitney_violin.png) |
+
+---
+
+### 🧪 2. Run the Test with Repeated Option
+
+| Step                                                                 | Inference Output                                          |
+|----------------------------------------------------------------------|-----------------------------------------------------------|
+| Select the **"Repeated"** option if needed, then click **Run**      | ![Test Output](react-client/images/infer1/infer_whitney.png) |
+
+---
+
+### 🤖 3. Predict Heart Attack Risk with ML Model
+
+| Step                                                                 | Prediction Result & SHAP Explanation                      |
+|----------------------------------------------------------------------|------------------------------------------------------------|
+| Go to the **ML** card, fill in the form with variables suspected to affect heart attack risk, then click **Predict** | ![Input Form](react-client/images/infer3/infer3_form.png) |
+|                                                                      | ![SHAP Plot](react-client/images/infer3/infer3_shap.png)   |
+
+
 | Go to statistic Card and upload a csv file                      | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer1/mannwhitney_violin.png) |
+| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
 
 
 | Click Run                       | See the inference Result                |
