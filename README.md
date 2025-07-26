@@ -1,6 +1,6 @@
-# 📊 ML Stats App
+# 📊 LeafyLabs
 
-A **fullstack web application** for automated statistical testing, heart attack prediction, and explainable AI, with secure user authentication.
+A **fullstack web application** for automated statistical testing, heart attack prediction, and explainable Machine Learning / AI model, with secure user authentication.
 
 ---
 
@@ -59,7 +59,7 @@ cd LeafyLabs
 
 ### 2️⃣ Configure Environment Variables
 
-Create a `.env` file in the root of the project:
+Create a `.env` file in the fastapi folder:
 
 ```env
 ENV=development
@@ -99,19 +99,19 @@ docker-compose up --build
 
 *(Add your screenshots here!)*
 
-| Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
+| Upload CSV                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![mann-whitney U data](images/infer2/mannwhitney_infer.csv) | ![SHAP Plot](images/revenue_show1.png) |
-
-
-| Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
-| ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](images/infer1/h0_3group_params.csv) | ![SHAP Plot](images/revenue_show1.png) |
+| ![mann-whitney U data](images/infer2/mannwhitney_infer.png) | ![SHAP Plot](images/revenue_show1.png) |
 
 
 | Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](images/h0_3group_params.csv) | ![SHAP Plot](docs/screenshots/shap_plot.png) |
+| ![wide range csv data](images/infer1/h0_3group_params.png) | ![SHAP Plot](images/revenue_show1.png) |
+
+
+| Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
+| ---------------------------------------------- | -------------------------------------------- |
+| ![wide range csv data](images/h0_3group_params.png) | ![SHAP Plot](docs/screenshots/shap_plot.png) |
 
 ---
 
