@@ -26,7 +26,7 @@ A **fullstack web application** for automated statistical testing, heart attack 
 * Built with **scikit-learn** and **FastAPI**.
 * Instant prediction results.
 
-### ✅ Explainable AI with SHAP
+### ✅ Explainable ML Model with SHAP
 
 * See **why** the model made a prediction.
 * Visual SHAP plots showing feature contributions for each data point.
@@ -101,7 +101,7 @@ docker-compose up --build
 
 | Upload a CSV file                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject/.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
+| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
 
 
 | Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
@@ -111,7 +111,7 @@ docker-compose up --build
 
 | Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](react-client/images/h0_3group_params.png) | ![SHAP Plot](react-client/images/shap_plot.png) |
+| ![wide range csv data](react-client/images/infer3/infer3_form.png) | ![SHAP Plot](react-client/images/infer3/infer3_shap.png) |
 
 ---
 
