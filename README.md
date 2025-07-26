@@ -102,9 +102,17 @@ Below are some screenshots that illustrate how to use the app — from uploading
 
 ### 📊 1. Upload CSV File for Statistical Inference
 
+> ⚠️ Make sure your CSV file is in **wide format**, where each column represents a different group or variable.  
+> For example: one column for "Age Group A", another for "Age Group B", etc.
+
 | Step                                                                 | Inference Result & SHAP Explanation                      |
 |----------------------------------------------------------------------|-----------------------------------------------------------|
-| Go to the **Statistic** card and upload a `.csv` file               | ![Statistical Result](react-client/images/infer2/mannwhitney_violin.png) |
+| Upload a `.csv` file in wide format via the **Statistic** card     | ![Statistical Result](react-client/images/infer2/mannwhitney_violin.png) |
+
+| Example of Wide-Format Table                                        |                                                           |
+|----------------------------------------------------------------------|-----------------------------------------------------------|
+| ![Wide CSV Example](react-client/images/infer1/infer_whitney.png) |                                                           |
+
 
 ---
 
