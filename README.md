@@ -99,19 +99,19 @@ docker-compose up --build
 
 *(Add your screenshots here!)*
 
-| Upload CSV                       | Prediction & SHAP Explanation                |
+| Upload a CSV file                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![mann-whitney U data](images/infer2/mannwhitney_infer.png) | ![SHAP Plot](images/revenue_show1.png) |
+| ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject/.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
 
 
 | Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](images/infer1/h0_3group_params.png) | ![SHAP Plot](images/revenue_show1.png) |
+| ![wide range csv data](react-client/images/infer1/h0_3group_params.png) | ![SHAP Plot](react-client/images/revenue_show1.png) |
 
 
 | Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![wide range csv data](images/h0_3group_params.png) | ![SHAP Plot](docs/screenshots/shap_plot.png) |
+| ![wide range csv data](react-client/images/h0_3group_params.png) | ![SHAP Plot](react-client/images/shap_plot.png) |
 
 ---
 
