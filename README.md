@@ -99,17 +99,17 @@ docker-compose up --build
 
 *(Add your screenshots here!)*
 
-| Upload a CSV file                       | Prediction & SHAP Explanation                |
+| Go to statistic Card and upload a csv file                      | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
 | ![mann-whitney U data](react-client/images/infer2/mannwhitney_reject.png) | ![SHAP Plot](react-client/images/infer2/mannwhitney_violin.png) |
 
 
-| Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
+| Click Run                       | See the inference Result                |
 | ---------------------------------------------- | -------------------------------------------- |
 | ![wide range csv data](react-client/images/infer1/h0_3group_params.png) | ![SHAP Plot](react-client/images/revenue_show1.png) |
 
 
-| Upload CSV & Select Test                       | Prediction & SHAP Explanation                |
+| Go to ML Card, input the X and click predict                       | Prediction & SHAP Explanation                |
 | ---------------------------------------------- | -------------------------------------------- |
 | ![wide range csv data](react-client/images/infer3/infer3_form.png) | ![SHAP Plot](react-client/images/infer3/infer3_shap.png) |
 
